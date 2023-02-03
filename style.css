@@ -13,7 +13,7 @@ body {
 
 #github {
     color: red;
-    text-decoration : none;
+    text-decoration: none;
 }
 
 @keyframes fade {
@@ -36,4 +36,20 @@ body {
     100% {
         opacity: 0;
     }
+}
+
+input[type=text],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=button] {
+    width: auto;
+    float: right;
+    cursor: pointer;
+    padding: 7px;
 }
