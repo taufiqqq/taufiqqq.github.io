@@ -1,0 +1,39 @@
+body {
+    margin: 100px;
+
+    background-color: #FDDD;
+    padding: 2px;
+}
+
+#animated-text {
+    color: blue;
+    font-size: 30px;
+    animation: fade 3s infinite;
+}
+
+#github {
+    color: red;
+    text-decoration : none;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 80;
+    }
+
+    50% {
+        opacity: 100;
+    }
+
+    70% {
+        opacity: 50;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
