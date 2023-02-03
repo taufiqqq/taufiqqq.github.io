@@ -3,17 +3,11 @@ let saveFile = () => {
 
     // Get the data from each element on the form.
     const name = document.getElementById('txtName');
-    const age = document.getElementById('txtAge');
-    const email = document.getElementById('txtEmail');
-    const country = document.getElementById('selCountry');
     const msg = document.getElementById('msg');
 
     // This variable stores all the data.
     let data =
         '\r Name: ' + name.value + ' \r\n ' +
-        'Age: ' + age.value + ' \r\n ' +
-        'Email: ' + email.value + ' \r\n ' +
-        'Country: ' + country.value + ' \r\n ' +
         'Message: ' + msg.value;
 
     // Convert the text to BLOB.
