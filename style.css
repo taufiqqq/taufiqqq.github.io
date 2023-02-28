@@ -1,0 +1,126 @@
+/* Apply the font to the menu items and time and date */
+.menu-item,
+.button,
+.greeting,
+.time-date {
+    font-family: 'Minecraft', sans-serif;
+}
+
+/* Style for the menu bar */
+.menu-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.5); /* translucent black */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    z-index: 1;
+}   
+
+/* Style for the menu items */
+.menu-item {
+    color: white;
+    text-decoration: none;
+    font-size: calc(1.1vw + 1.1vh);
+    margin-right: 20px;
+
+}
+
+/* Style for the time and date */
+.time-date {
+    color: white;
+    font-size: calc(1vw + 1vh);
+}
+
+/* Style for the canvas */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('https://i.pinimg.com/originals/dc/8d/ef/dc8def609c27f9123c4f61a83a3b93bd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.button {
+    width: 20vw;
+    height: 15vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 4px solid #ddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-size: calc(1.5vw + 1.5vh);
+}
+
+.button:hover {
+    background-color: rgba(140, 140, 140, 0.5);
+    border-color: #000000;
+    color: #222;
+}
+
+.greeting {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#name {
+    font-size: 5vw;
+    z-index: 2;
+    text-align: center;
+    text-shadow: 0 0 3px #ffffff, 0 0 10px #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.1em solid #2d2d2d;
+    animation: typing 3s steps(40, end), fadeOut 2s ease-out 5s forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
