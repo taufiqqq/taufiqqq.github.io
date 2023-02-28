@@ -32,12 +32,3 @@ Online HTML, CSS and JavaScript editor to run code online.
 </body>
 
 </html>
-
-<?php
-            	
-$data = $_POST['msg'];
-$fp = fopen('data.txt', 'a');
-fwrite($fp, $data);
-fclose($fp);
-
-?>
