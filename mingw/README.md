@@ -20,3 +20,8 @@ Move it until top
 5. Sample
 https://jumail-utm.github.io/codelabs/installations/codelab-vscode-cpp-install-manual/download/vscode-cpp-samples.zip
 
+
+
+
+//ALL INSTALLATION CAN BE RETRIEVED HERE
+https://github.com/jumail-utm/codelabs/tree/main/installations
