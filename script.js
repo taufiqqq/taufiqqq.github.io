@@ -1,6 +1,6 @@
 const canvas = document.getElementById('canvas');
 const context = canvas.getContext('2d');
-const name = 'MUHAMMAD TAUFIQ BIN JURIMI...';
+const name = 'MUHAMMAD TAUFIQ BIN JURIMI';
 const nameElem = document.getElementById('name');
 let i = 0;
 

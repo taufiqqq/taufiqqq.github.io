@@ -1,34 +1,175 @@
-<!-- 
-Online HTML, CSS and JavaScript editor to run code online.
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>TAUFIQ'S NGL</title>
+<title>Taufiq Dev Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>
 
-        <a id="github" href=https://www.github.com/taufiqqq> MY GITHUB </a>
-    </h1>
-    <p>
-    <div id="animated-text">MUHAMMAD TAUFIQ BIN JURIMI</div>
-    <div><input type="text" id="txtName" placeholder="Enter your name (or put anonymous)" /></div>
-    <form method="post">
-    <div>
-        <textarea id="msg" name="msg" placeholder="Write some message ..." style="height:100px"></textarea>
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black" style="opacity: 80%;">
+    <div class="w3-col m2">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
     </div>
-    <div>
-        <input type="submit" name="submit">
+    <div class="w3-col m2">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT ME</a>
     </div>
+    <div class="w3-col m2">
+      <a href="#education" class="w3-button w3-block w3-black">EDUCATION</a>
+    </div>
+    <div class="w3-col m2">
+      <a href="#experience" class="w3-button w3-block w3-black">EXPERIENCE</a>
+    </div>
+    <div class="w3-col m2">
+      <a href="#skills" class="w3-button w3-block w3-black">SKILLS</a>
+    </div>
+    <div class="w3-col m2">
+      <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-text-white" style="text-align: left; font-size:20px; font-weight: bold; text-shadow: 0 0 5px #000000, 0 0 10px #000000;">Computer Science Student<br>Universiti Teknologi Malaysia</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="border-style: double none none double; padding: 20px 20px; border-width: 5px; font-size:90px; font-weight: bold; text-shadow: 0 0 10px #000000, 0 0 20px #000000;"><a href="https://github.com/taufiqqq" target="_blank" style="text-decoration: none;">MUHAMMAD</a></span>
+    <span class="w3-text-white" style="border-style: none double double none; padding: 20px 20px; border-width: 5px; font-size:90px; font-weight: bold; text-shadow: 0 0 10px #000000, 0 0 20px #000000;"><a href="https://github.com/taufiqqq" target="_blank" style="text-decoration: none;">TAUFIQ</a></span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white" style= "font-size:20px; font-weight: bold; text-shadow: 0 0 5px #000000, 0 0 10px #000000;">Scroll Down Below &#9660</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+    <img src="face.png" style="width:100%;max-width:400px; display: block;margin-left: auto;margin-right: auto;" class="w3-margin-top">
+    <p>My name is Muhammad Taufiq bin Jurimi, a 2nd year Computer Science (Software Engineering) student at Universiti Teknologi Malaysia.</p>
+    <p>I have been active in academic and co-curricular activities that involve leadership skills and teamwork for more than ten years.</p>
+    <p>I strive to do my best in every aspect of life. Right now, I am looking for any opportunity to improve my computer science skills, soft skills and gain experiences in software development. </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>Consistency is the key to success</i></p>
+    </div>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="education">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MY EDUCATION</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'University');" id="myLink">
+        <div class="w3-col s6 tablink">University</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'School');">
+        <div class="w3-col s6 tablink">School</div>
+      </a>
+    </div>
+
+    <div id="University" class="w3-container menu w3-padding-48 w3-card">
+      <h5 style="font-weight: bold;">Universiti Teknologi Malaysia</h5>
+      <p class="w3-text-grey" style="font-weight: bold;">2021 - 2025</p>
+      <p class="w3-text-grey">Bachelor Degree of Computer Science (Software Engineering)</p>
+      <p class="w3-text-grey">Current CGPA (March '23) : 3.92</p><br>
+
+      <h5 style="font-weight: bold;">Universiti Teknologi MARA</h5>
+      <p class="w3-text-grey" style="font-weight: bold;">2020 - 2021</p>
+      <p class="w3-text-grey">Foundation in Science</p>
+      <p class="w3-text-grey">CGPA (2022) : 4.00</p><br>
+    </div>
+
+    <div id="School" class="w3-container menu w3-padding-48 w3-card">
+      <h5 style="font-weight: bold;">SMK Damai Jaya</h5>
+      <p class="w3-text-grey" style="font-weight: bold;">2015 - 2019</p>
+      <p class="w3-text-grey">SPM : 9A</p><br>
+    
+      <h5 style="font-weight: bold;">SK Taman Damai Jaya</h5>
+      <p class="w3-text-grey" style="font-weight: bold;">2009 - 2014</p><br>
+    
+    </div> 
+  </div>  
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="experience" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MY EXPERIENCES</span></h5>
+    <p><span class="w3-tag">1.</span> 2023 - 1st Place Winner of <a href=https://news.utm.my/2023/02/faculty-of-computings-hci-day-back-after-2-year-break/ target="_blank" style="color: blue; text-decoration: none;">Human Computer Interaction Day</a></p>
+    <p><span class="w3-tag">2.</span> 2022 - Vice Secretary of <a href=https://www.facebook.com/utmpersaka target="_blank" style="color: blue; text-decoration: none;">Persatuan Mahasiswa Sains Komputer (PERSAKA)</a></p>
+    <p><span class="w3-tag">3.</span> 2022 - Director of <a href=https://www.facebook.com/utmpersaka target="_blank"style="color: blue; text-decoration: none;"> Programming Clinic 2022</a></p>
+    <p><span class="w3-tag">4.</span> 2022 - 1st Place Winner of GoGreen Craft Project Competition</p>
+    <p><span class="w3-tag">5.</span> 2021 - Head of Committee (Welfare And Volunteering Exco) <a href=https://www.instagram.com/jpkuitmdengkil target="_blank" style="color: blue; text-decoration: none;">JPK UiTM Dengkil</a></p>
+    <p><span class="w3-tag">6.</span> 2019 - Chairman of Career Club, Class Monitor 5 Azalea</p>
+    <p><span class="w3-tag">7.</span> 2019 - SMK Damai Jaya Attitude Figure</p>
+  </div>
+</div>
+
+<!-- Skills -->
+<div class="w3-container" id="skills" style="padding-bottom:64px;">
+  <div class="w3-center w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">SKILLS AND CERTIFICATES</span></h5>
+    <p><strong>General Programming Language</strong><br>C++, C, Python, Java</p>
+    <p><strong>Web Dev</strong><br>HTML, CSS, Javascript, ReactJS</p>
+    <p><strong>Cloud Computing & Data Analytics</strong><br>
+      <a href= "https://www.credly.com/badges/61180db4-cef9-48c0-88d5-cf06708cd6f7?source=linked_in_profile" style = "text-decoration: none; color: blue;" target="_blank">AWS Academy Cloud Foundation</a><br>
+      <a href= "https://www.credly.com/badges/8bcfea11-6980-4917-be3f-462f0c44be58/linked_in_profile" style = "text-decoration: none; color: blue;" target="_blank">Azure Data Fundamentals</a>    
     </p>
-    <script src="script.js"></script>
-</form>
-</body>
+    <p><strong>Other Computer Science Skills</strong><br>R, SQL, Figma, Assembly</p>
+    <p><strong>Others</strong><br>Malay, English, Arabic, Communication, Leadership, Microsoft Office</p>
+    <p style="font-style: italic;"><br>Check out my projects <a href="https://github.com/taufiqqq" target="_blank" style="font-style: normal;">HERE</a></p>
+  </div>
+</div>
 
+<!-- Contact/Area Container -->
+<div class="w3-container" id="contact" style="padding-bottom:32px;">
+  <div class="w3-center w3-content" style="max-width:700px">
+    <h5 class="w3-padding-48"><span class="w3-tag w3-wide">CONTACT</span></h5>
+    <p>My Email: muhdtaufiqbinjurimi@gmail.com</p>
+    <a href= "https://github.com/taufiqqq" style = "text-decoration: none; color: blue;">Github</a><br>
+    <a href= "https://www.linkedin.com/in/taufiqjurimi/" style = "text-decoration: none; color: blue;">LinkedIn</a><br>
+    <a href= "https://www.instagram.com/tauf.iqq" style = "text-decoration: none; color: blue;">Instagram</a><br>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
 </html>

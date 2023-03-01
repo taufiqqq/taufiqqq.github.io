@@ -1,0 +1,55 @@
+body {
+    margin: 100px;
+
+    background-color: rgba(235, 249, 255, 0.867);
+    padding: 2px;
+}
+
+#animated-text {
+    color: blue;
+    font-size: 30px;
+    animation: fade 3s infinite;
+}
+
+#github {
+    color: red;
+    text-decoration: none;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 80;
+    }
+
+    50% {
+        opacity: 100;
+    }
+
+    70% {
+        opacity: 50;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+input[type=text],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=button] {
+    width: auto;
+    float: right;
+    cursor: pointer;
+    padding: 7px;
+}
