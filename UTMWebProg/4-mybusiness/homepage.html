@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-image: url(background.jpg)">
+    <font face="Helvetica" size="5vh ">
+        <div align="center" style="height: 8vh">
+            <b style="font-size: 5vh;">
+                <a style="text-decoration: none; color: black" href="homepage.html">Homepage</a> ||
+                <a style="text-decoration: none; color: blue" href="aboutus.html">About Us</a> ||
+                <a style="text-decoration: none; color: blue" href="services.html">Service</a>
+            </b>
+        </div>
+        <div style="width: 100%">
+            <div style="width: 75%; float: left;">
+                <img src="keyboard.png" style="width: 90%; display: block; margin: auto;">
+                <p style="padding-left:5%; padding-right: 5%;">Welcome to <i style="color:darkred">Kolek</i><i
+                        style="color: darkblue">Keeb</i>, your favourite local keyboard supplier and modder.<br>
+                    We provide service for selling keyboards, upgrading/modding your keyboards and planning building your dream
+                    keyboard.<br>
+                    Our vision is to create the most affordable market for custom keyboard enthusiasts in Malaysia. <br>
+                    Visit our store <a href="services.html" style="text-decoration: none;"><i>here</i></a> to buy our products
+                </p>    
+            </div>
+            <div style="margin-left: 75%;  border-radius: 1px">
+                <div style="height:22vh; border-style: solid " id="clock"> </div>
+                <div style="height:22vh; border-style: none solid">Contact Us<br>
+                    Email:customerservice@kolekkeebs.com<br>
+                    Phone Number: +6019-6438023</div>
+                <div style="height:22vh; border-style: solid">
+                    Our Social Media<br>
+                    <a class="fa fa-facebook-official" style="font-size:48px;color: blue; text-decoration: none"
+                        href="https://www.facebook.com/muhd.taufiq.165"> </a> KolekKeebs <br>
+                    <a class="fa fa-instagram" style="font-size:48px;color:rgb(255, 89, 0); text-decoration: none"
+                        href="https://www.instagram.com/tauf.iqq/"></a> OfficialKolekKeebs <br>
+                    <a class="fa fa-youtube-play" style="font-size:48px;color:red; text-decoration: none"
+                        href="https://www.youtube.com/c/Hyperplexed"></a> KKeyboard
+
+                </div>
+                <div style="height:22vh; border-style: none solid solid solid">
+                    Created by KolekKeebs™ <br>
+                    Founded by Muhammad Taufiq
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+    function updateClock() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+        var timeString = hours + ":" + minutes + ":" + seconds;
+        document.getElementById("clock").innerHTML = "Current Time - <br>" + timeString;
+    }
+    setInterval(updateClock, 1000);
+</script>
+
+</html>
