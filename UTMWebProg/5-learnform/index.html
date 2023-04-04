@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: blanchedalmond">
+    <form method="POST" action="comments.php">
+        <h2 align="center">My First Form</h2>
+        <div style="margin-left: 30vw">
+            Name:
+            <input type="text" name="name" style="width: 50%;" required><br><br>
+            Age:
+            <input type="number" name="age" min="1" required><br><br>
+            Gender:
+            <input type="radio" name="gender" value="male" required>Male
+            <input type="radio" name="gender" value="female" required>Female<br><br>
+            Address:
+            <textarea name="address" rows="4" cols="50" required></textarea><br><br>
+            Birthday:
+            <input type="date" name="birthday" required><br><br>
+            Email:
+            <input type="email" name="email" value="email" required><br><br>
+
+            Lucky Number:
+            <input type="number" name="age" min="1" max="5" required><br><br>
+
+            <input type="submit" name="submit" value="SUBMIT" required>
+            <input type="reset" name="reset" value="RESET" required>
+        </div>
+
+    </form>
+</body>
+
+</html>
