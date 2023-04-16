@@ -1,0 +1,79 @@
+<!--
+********************************************************
+* Tutorial 3b: CSS Properties                          *
+* T3b-3.html: Setting borders of an element            *
+*                                                      *
+* Date: 16 Apr 2023                                    *
+* Name: MUHAMMAD TAUFIQ BIN JURIMI                     *
+********************************************************
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Borders</title>
+   <style>
+      body {
+         background-color: #ccffcc
+      }
+
+      div {
+         text-align: center;
+         margin-bottom: 1em;
+         padding: .5em
+      }
+
+      .thick {
+         border-width: thick
+      }
+
+      .medium {
+         border-width: medium
+      }
+
+      .thin {
+         border-width: thin
+      }
+
+      .groove {
+         border-style: groove
+      }
+
+      .inset {
+         border-style: inset
+      }
+
+      .outset {
+         border-style: outset
+      }
+
+      .red {
+         border-color: red
+      }
+
+      .blue {
+         border-color: blue
+      }
+
+      .red_box {
+         border: thin red dotted
+      }
+
+      .blue_top_bottom {
+         border-top: blue double;
+         border-bottom: blue double
+      }
+   </style>
+</head>
+
+<body>
+   <div class="thick groove">This text has a border</div>
+   <div class="medium groove">This text has a border</div>
+   <div class="thin groove">This text has a border</div>
+   <p class="thin red inset">A thin red line...</p>
+   <p class="medium blue outset">
+      And a thicker blue line</p>
+
+   <p class="red_box">Another way to style borders</p>
+   <p class="blue_top_bottom">Style only the top and bottom borders</p>
+</body>

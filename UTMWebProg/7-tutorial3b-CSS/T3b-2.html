@@ -1,0 +1,52 @@
+<!--
+********************************************************
+* Tutorial 3b: CSS Properties                          *
+* T3b-2.html: Adding background images and indentation *
+*                                                      *
+* Date: 16 Apr 2023                                    *
+* Name: MUHAMMAD TAUFIQ BIN JURIMI                     *
+********************************************************
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Background Images</title>
+   <style>
+      body {
+         background-image: url(logo.gif);
+         background-position: bottom right;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+      }
+
+      p {
+         font-size: 18pt;
+         color: #aa5588;
+         text-indent: 1em;
+         font-family: arial, sans-serif;
+      }
+
+      i {
+         background-color: yellow;
+         color: black
+      }
+
+      .dark {
+         font-weight: bold
+      }
+   </style>
+</head>
+
+<body>
+   <p>
+      This example uses the background-image,
+      background-position and background-attachment
+      styles to place the <span class="dark"> Universiti Teknologi Malaysia</span>
+      logo in the bottom, right corner of the page. <i>Notice how the logo
+         stays in the proper position when you resize the
+         browser window. </i>
+   </p>
+</body>
+
+</html>
