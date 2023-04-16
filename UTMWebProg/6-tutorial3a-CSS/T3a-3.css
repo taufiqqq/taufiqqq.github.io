@@ -1,0 +1,25 @@
+/* An external stylesheet */
+a {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+    background-color: #ccffcc
+}
+
+li em {
+    color: red;
+    font-weight: bold;
+    background-color: #ffffff
+}
+
+ul {
+    margin-left: 2cm
+}
+
+ul ul {
+    text-decoration: underline;
+    margin-left: .5cm
+}
