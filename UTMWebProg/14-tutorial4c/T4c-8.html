@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Do it yourself</title>
+</head>
+
+<body>
+    
+    <h1>
+        <font color="red">My Profiles: </font>
+    </h1>
+
+    <script type="text/javascript">
+        var name, year_of_birth, town;
+        var age;
+        var today;
+
+
+        name = prompt("Enter your name:");
+        year_of_birth = prompt("Enter your year of birth:");
+        town = prompt("Enter your town:");
+
+        today = new Date().getFullYear();
+        age = today-year_of_birth;
+
+        document.write("<p>My Name is "+ name +"</p>");
+        document.write("<p>I am "+ age +" years old</p>");
+        document.write("<p>I am from "+ town + "</p>");
+    </script>
+
+    <script type="text/javascript">
+
+    </script>
+
+</body>
+
+</html>
+<!-- For your information document.write(…) method that displays text in the page 
+document.URL property that gives the location of the HTML document document.
+lastModified property that gives the date & time the HTML document was last changed  -->

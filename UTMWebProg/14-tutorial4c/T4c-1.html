@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <title>Date Object</title>
+</head>
+
+<body>
+    <script language="Javascript">
+        var today = new Date();
+        var day = today.getDate();
+        var month = today.getMonth() + 1;
+        var year = today.getFullYear();
+        var date = day + "/" + month + "/" + year;
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        document.writeln("Current Date: <b>", date, "</b><br>");
+        document.writeln("Current Time: <b>", time, "</b><br>");    </script>
+</body>
+
+</html>

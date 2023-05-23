@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>Math Object</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var input1, input2, input3; 
+        var value1, value2, value3;
+        var maxValue;
+        input1 = window.prompt("Enter first number", "0");
+        input2 = window.prompt("Enter second number", "0");
+        input3 = window.prompt("Enter third number", "0");
+        value1 = parseFloat(input1); value2 = parseFloat(input2);
+        value3 = parseFloat(input3);
+        maxValue = Math.max(value1, Math.max(value2, value3));
+        document.writeln("First number: " + value1 + "<br />Second number: " + value2 + "<br />Third number: " + value3 + "<br />Maximum is: " + maxValue);    
+    </script>
+</body>
+
+</html>

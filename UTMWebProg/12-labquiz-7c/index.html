@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function combineName() {
+            var firstName = document.getElementById("fname").value;
+            var lastName = document.getElementById("lname").value;
+            var fullNameInput = document.getElementById("fullname");
+
+            var fullName = firstName + " " + lastName;
+            fullNameInput.value = fullName;
+        }
+        function clearName() {
+            var fullNameInput = document.getElementById("fullname");
+            fullNameInput.value = "";
+        }
+    </script>
+</head>
+
+<body>
+    <table>
+        <h1>Credit Application</h1>
+        <tr>
+            <th>First Name :</th>
+            <td><input type="text" id="fname"></td>
+        </tr>
+        <tr>
+            <th>Last Name :</th>
+            <th><input type="text" id="lname"></th>
+        </tr>
+        <tr>
+            <th>Full Name :</th>
+            <td><input type="text" id="fullname"></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td><button onclick="combineName()">Show Full Name</button>
+                <button onclick="clearName()">Clear</button>
+            </td>
+        </tr>
+
+    </table>
+</body>
+
+</html>

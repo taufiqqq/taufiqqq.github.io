@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>Assigning Hyperlink and Form with Javascript</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        document.writeln("Message from Javascript <br><br>");
+
+    </script>
+
+    <a href="javascript: window.alert('Hello!\n How are you?');"> Executing Javascript from hyperlink</a>
+    <form name="form1">
+        <input type="button" name="btn1" value="Executing Javascript from button" 
+        onClick="javascript: 
+            var name = window.prompt('What is your name?','');  
+            window.alert('Hello ' + name); ">
+    </form>
+</body>
+
+</html>
