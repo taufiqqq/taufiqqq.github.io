@@ -13,7 +13,9 @@ function typeWriter() {
   }
   setTimeout(function() {
     var button = document.querySelector('.button-container');
-    button.style.zIndex = 3;
+    button.style.zIndex = 2;
+    var button = document.querySelector('.button-container');
+    button.style.opacity = 1;
   }, 7000);
 }
 
