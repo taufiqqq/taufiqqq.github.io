@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Text from TXT File</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .text-container {
+            max-width: 80%;
+            max-height: 80vh;
+            overflow: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-container" id="centered-text">
+    </div>
+
+    <script>
+        window.onload = function () {
+            var textContainer = document.getElementById("centered-text");
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "taufiq.txt", true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    textContainer.innerText = xhr.responseText;
+                }
+            };
+            xhr.send();
+        };
+    </script>
+</body>
+
+</html>
