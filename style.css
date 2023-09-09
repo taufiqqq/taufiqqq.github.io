@@ -2,7 +2,9 @@
 .menu-item,
 .button,
 .greeting,
-.time-date {
+.time-date,
+.age,
+.menu-bar {
     font-family: 'Minecraft', sans-serif;
 }
 
@@ -30,7 +32,7 @@
 }
 
 /* Style for the time and date */
-.time-date {
+.age {
     color: white;
     font-size: calc(1vw + 1vh);
 }
