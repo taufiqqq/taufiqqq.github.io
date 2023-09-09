@@ -4,7 +4,8 @@
 .greeting,
 .time-date,
 .age,
-.menu-bar {
+.menu-bar,
+.wishes {
     font-family: 'Minecraft', sans-serif;
 }
 
@@ -15,19 +16,20 @@
     left: 0;
     width: 100%;
     height: 10vh;
-    background-color: rgba(0, 0, 0, 0.5); /* translucent black */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* translucent black */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
     box-sizing: border-box;
-}   
+}
 
 /* Style for the menu items */
 .menu-item {
     color: white;
     text-decoration: none;
-    font-size: calc(1.1vw + 1.1vh);
+    font-size: calc(1vw + 1vh);
     margin-right: 20px;
 }
 
@@ -36,6 +38,17 @@
     color: white;
     font-size: calc(1vw + 1vh);
 }
+
+.wishes {
+    text-shadow: 0 0 3px #ffffff, 0 0 10px #ffffff;
+    text-decoration: none;
+    font-size: calc(1.5vw + 1.5vh);
+    font-weight: bold;
+    position: absolute;
+    bottom: 5%;
+    /* Updated to position 5% from the bottom */
+}
+
 
 /* Style for the canvas */
 canvas {
@@ -58,6 +71,11 @@ canvas {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.birthday-container {
+    display: flex;
+    justify-content: center;
 }
 
 .button {
@@ -100,6 +118,16 @@ canvas {
     overflow: hidden;
     border-right: 0.1em solid #2d2d2d;
     animation: typing 3s steps(40, end), fadeOut 2s ease-out 5s forwards;
+}
+
+#confetti {
+    background: #000;
+    height: 100%;
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 0;
 }
 
 @keyframes typing {
