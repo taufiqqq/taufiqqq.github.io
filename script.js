@@ -46,24 +46,45 @@ function typeWriter() {
 
 typeWriter();
 
-function setTimeDate() {
-  const now = new Date();
-  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
-  const timeDate = now.toLocaleString('en-US', options);
-  document.getElementById('time-date').innerHTML = timeDate;
+function updateAge() {
+  const birthDate = moment('2002-12-09');
+  const currentDate = moment(); // This gets the current date and time in the user's device timezone
+  const age = moment.duration(currentDate - birthDate);
+
+  // Calculate age in years with 9 decimal places
+  const ageInYears = age.asYears();
+
+  // Update the age on the page
+  document.getElementById('age').textContent = `I am a ${ageInYears.toFixed(9)} years old developer`;
 }
 
+/* // dayjs
+function updateAge() {
+  var birthDate = dayjs('2002-12-09');
+  var currentDate = dayjs();
+  var ageInMilliseconds = currentDate.diff(birthDate);
+  var ageInSeconds = ageInMilliseconds / 1000;
+  var ageInMinutes = ageInSeconds / 60;
+  var ageInHours = ageInMinutes / 60;
+  var ageInDays = ageInHours / 24;
+  var ageInYears = ageInDays / 365.25; // Account for leap years
+
+  // Update the age on the page
+  document.getElementById('age').textContent = 'I am a ' + ageInYears.toFixed(9) + ' years old developer';
+} */
+
+
+/* // normal js calculation
 function updateAge() {
   const currentDate = new Date();
   const ageInMilliseconds = currentDate - birthDate;
-  const ageInYears = ageInMilliseconds / (365 * 24 * 60 * 60 * 1000);
+  const ageInYears = ageInMilliseconds / (365.25 * 24 * 60 * 60 * 1000);
 
-  // Display age with 5 decimal places
-  const ageText = ageInYears.toFixed(10);
-
+  const ageText = ageInYears.toFixed(9);
   // Update the age on the page
   document.getElementById('age').textContent = "I am a " + ageText + " years old developer";
-}
+} */
+
 
 $(document).ready(function () {
   var frameRate = 30;
@@ -414,7 +435,6 @@ $(document).ready(function () {
   });
 });
 
-setInterval(setTimeDate, 1000);
 setInterval(updateAge, 50);
 
 updateAge();
