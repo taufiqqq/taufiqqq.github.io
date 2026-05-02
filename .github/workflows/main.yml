@@ -1,5 +1,6 @@
 name: Deploy to VPS
 
+
 on:
   push:
     branches:
@@ -9,6 +10,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    # Since i put the secret in this env
+    environment: DEPLOY TO SERVER
 
     steps:
       - name: Checkout code
